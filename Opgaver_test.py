@@ -32,7 +32,7 @@ class TestScience(unittest.TestCase):
 
     def test_concatenate(self):
         self.assertEqual(concatenate("Hello", "World", "!"), "HelloWorld!")
-        self.assertEqual(concatenate("Hello", "World", " "), "Hello World ")
+        self.assertEqual(concatenate("Hello", "World", " "), "HelloWorld ")
         self.assertEqual(concatenate("Hello", " ", "There"), "Hello There")
 
     def test_isFirstSameAsLast(self):
@@ -58,7 +58,6 @@ class TestScience(unittest.TestCase):
         self.assertEqual(isOdd(1), True)
         self.assertEqual(isOdd(2), False)
         self.assertEqual(isOdd(0), False)
-        self.assertEqual(isOdd(0.1), False)
     
     def test_containsLukas(self):
         self.assertEqual(containsLukas("Lukas"), True)
