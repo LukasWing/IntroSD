@@ -1,7 +1,7 @@
 import os
 import unittest
 import math
-from Del1 import *
+from Opgaver import *
 
 class TestScience(unittest.TestCase):
 

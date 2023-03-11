@@ -77,6 +77,5 @@ def kineticEnergy(m, v):
 
 def molarmass(m, n):
     """Compute molar mass, from mass and number of moles"""
-    
     return 0.0
 
