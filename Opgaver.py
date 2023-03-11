@@ -5,8 +5,7 @@ def foo():
 
 def bar(a):
     """Returns the text "bar 'a'." """
-    text = "Bar " + str(a) + "."
-    return text
+    return "Bar " + str(a) + "."
 
 def getPositives(intList):
     """This method takes a list of integers, 
@@ -36,11 +35,11 @@ def isNumber(a):
 
 def isEven(a):
     """Returns True if a is an even number, otherwise False"""
-    return False
+    return a % 2 == 0
 
 def isOdd(a):
     """Returns True if a is an odd number, otherwise False. Use isEven(a)"""
-    return False
+    return not isEven(a)
 
 def containsLukas(a):
     """Returns True if the string a contains the name Lukas, otherwise False"""
@@ -85,4 +84,3 @@ def kineticEnergy(m, v):
 def molarmass(m, n):
     """Compute molar mass, from mass and number of moles"""
     return 0.0
-
