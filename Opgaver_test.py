@@ -89,6 +89,18 @@ class TestScience(unittest.TestCase):
         self.assertEqual(isNameOnRoster(["John", "Jane", "Mathias"], "William"), False)
         self.assertEqual(isNameOnRoster(["John", "Jane", "Mathias"], "Lukas"), False)
     
+    def test_rosterToString(self):
+        self.assertEqual(rosterToString(["John", "Jane", "Mathias"]), "John Jane Mathias ")
+        self.assertEqual(rosterToString(["John", "Jane"]), "John Jane ")
+        self.assertEqual(rosterToString(["John"]), "John ")
+        self.assertEqual(rosterToString([]), "")
+
+    def test_namesStartingWith(self):
+        self.assertEqual(namesStartingWith(["John", "Jane", "Mathias"], "J"), ["John", "Jane"])
+        self.assertEqual(namesStartingWith(["John", "Jane", "Mathias"], "M"), ["Mathias"])
+        self.assertEqual(namesStartingWith(["John", "Jane", "Mathias"], "L"), [])
+        self.assertEqual(namesStartingWith([], "W"), [])
+
     def test_canIAffordIt(self):
         self.assertEqual(canIAffordIt([1, 3], 6), True)
         self.assertEqual(canIAffordIt([1, 2, 3], 7), True)

@@ -62,6 +62,14 @@ def isNameOnRoster(aList, name):
     """Returns True if the name is on the list, otherwise False"""
     return False
 
+def rosterToString(aList):
+    """Returns a string with the names on the list, followed by a space"""
+    return ""
+
+def namesStartingWith(aList, letter):
+    """Returns a list with the names starting with the letter"""
+    return []
+
 def canIAffordIt(prices, money):
     """Returns True if the sum of the prices is less than or equal to the money, otherwise False"""
     return False
@@ -72,7 +80,6 @@ def Q(L_f, m):
 
 def kineticEnergy(m, v):
     """Compute kinetic energy"""
-
     return 0.0
 
 def molarmass(m, n):
